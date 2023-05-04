@@ -1,0 +1,50 @@
+<br>
+
+<div class="loginpage">
+<div class="container">
+  <div class="header">
+    <h2>Login</h2>
+</div>
+  <form [formGroup]="reactiveloginForm1" (ngSubmit)="login()" class="form">
+  <div class="form-control">
+    <br>
+    <label for="">Username:</label>
+    <input type="text" name="username" formControlName="username" placeholder="Enter Username">
+  </div>
+  <div *ngIf="reactiveloginForm1.controls['username'].invalid&&reactiveloginForm1.controls['username'].dirty">
+    <small *ngIf="reactiveloginForm1.controls['username'].errors?.['required']">
+      Please enter username
+    </small>
+    <small *ngIf="reactiveloginForm1.controls['username'].errors?.['minlength']">
+      Username atleast 8 characters
+    </small>
+  </div>
+  <br>
+  <div class="form-control">
+    <label for="">Password:</label>
+    <input type="password" name="password" formControlName="password" placeholder="Enter Password">
+  </div>
+  <div *ngIf="reactiveloginForm1.controls['password'].invalid&&reactiveloginForm1.controls['password'].dirty">
+    <small *ngIf="reactiveloginForm1.controls['password'].errors?.['required']">
+      Please enter password
+    </small>
+    <small *ngIf="reactiveloginForm1.controls['password'].errors?.['minlength']">
+      Password  atleast 8 characters
+    </small>
+  </div>
+  <br>
+
+  <div class="button">
+  <button (click)="onLogin()">login</button></div>
+  <br>
+  <br>
+  Don't Have an account? <a routerLink="/register">create new account</a>
+
+
+</form>
+
+</div>
+
+</div>
+
+

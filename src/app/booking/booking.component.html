@@ -1,0 +1,31 @@
+<br>
+<div class="booking">
+
+<div class="container">
+  <div class="header">
+    <h2>Boking for an Appoinment</h2>
+</div>
+<form class="form" [formGroup]="bookingform" (ngSubmit)="booking()">
+  <div class="form-control">
+    <label>Patient Name</label>
+    <input type="text" placeholder="Patient Name" name="patientname" formControlName="patientname">
+  </div>
+<div class="form-control">
+    <label>Email</label>
+    <input type="email" placeholder="email" name="email" formControlName="email">
+</div>
+<div class="form-control">
+    <label>Phone Number</label>
+    <input type="number" placeholder="Phone Number" name="phonenumber" formControlName="phonenumber">
+</div>
+<div class="form-control">
+    <label>Health Problem</label>
+    <input type="text" placeholder="Health Problem" name="issues" formControlName="issues">
+</div>
+
+<button>Submit </button>
+</form>
+</div>
+
+</div>
+

@@ -1,0 +1,33 @@
+
+.header{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: center;
+  position: relative;
+  background-color: black;
+  justify-content: space-around;
+}
+.nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav a {
+  text-decoration: none;
+  padding: 20px;
+  color:white;
+}
+.nav a:hover{
+  background-color: blue;
+  border-radius: 5px;
+}
+.header img{
+  width: 120px;
+  height: 30px;
+}
+
+i{
+  padding: 2px;
+}
+
+

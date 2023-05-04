@@ -1,0 +1,27 @@
+{
+  "users": [
+    {
+      "username": "sdsdsdsdsd",
+      "email": "dsdsd",
+      "password": "11111111",
+      "cpassword": "11111111",
+      "id": 1
+    },
+    {
+      "username": "Gowthamr",
+      "email": "gowthamr2107@gmail.com",
+      "password": "12345678",
+      "cpassword": "12345678",
+      "id": 2
+    },
+    {
+      "username": "saravana",
+      "email": "saravana@gmail.com",
+      "password": "87878787",
+      "cpassword": "87878787",
+      "id": 3
+    }
+  ],
+  "booking": [
+  ]
+}
